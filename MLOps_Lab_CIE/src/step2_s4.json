@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "endpoint": "/infer",
+  "sample_input": {
+    "pr_lines_changed": 894,
+    "file_count": 28,
+    "author_experience_months": 59,
+    "is_refactor": 0
+  },
+  "prediction": 5.946764548765508
+}
