@@ -1,0 +1,16 @@
+{
+  "health_endpoint": "/status",
+  "predict_endpoint": "/infer",
+  "port": 9000,
+  "health_response": {
+    "alive": true,
+    "service": "ReviewBot bug_detection_count API"
+  },
+  "test_input": {
+    "pr_lines_changed": 894,
+    "file_count": 28,
+    "author_experience_months": 59,
+    "is_refactor": 0
+  },
+  "prediction": 5.946764548765081
+}

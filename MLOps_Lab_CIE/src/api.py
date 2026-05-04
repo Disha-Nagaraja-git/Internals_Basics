@@ -4,7 +4,7 @@ import joblib
 
 app = FastAPI()
 
-model = joblib.load("../models/best_model.pkl")
+model = joblib.load("models/best_model.pkl")
 
 class InputData(BaseModel):
     pr_lines_changed: int = Field(..., ge=10, le=2000)

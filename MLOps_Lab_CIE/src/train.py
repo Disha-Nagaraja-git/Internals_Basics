@@ -10,7 +10,7 @@ import os
 import numpy as np
 
 # Load data
-data = pd.read_csv("../data/training_data.csv")
+data = pd.read_csv("data/training_data.csv")
 
 X = data.drop("bug_detection_count", axis=1)
 y = data["bug_detection_count"]
@@ -65,9 +65,8 @@ output = {
     "best_metric_value": best_mae
 }
 
-os.makedirs("../results", exist_ok=True)
-
-with open("../results/step1_s1.json", "w") as f:
+os.makedirs("results", exist_ok=True)
+with open("results/step1_s1.json", "w") as f:
     json.dump(output, f, indent=4)
 
 print("Task 1 completed")
@@ -78,11 +77,11 @@ print("Task 1 completed")
 
 import joblib
 
-os.makedirs("../models", exist_ok=True)
+os.makedirs("models", exist_ok=True)
 
 if best_model_name == "LinearRegression":
-    joblib.dump(models["LinearRegression"], "../models/best_model.pkl")
+    joblib.dump(models["LinearRegression"], "models/best_model.pkl")
 else:
-    joblib.dump(models["GradientBoosting"], "../models/best_model.pkl")
+    joblib.dump(models["GradientBoosting"], "models/best_model.pkl")
 
 print("Best model saved successfully")
