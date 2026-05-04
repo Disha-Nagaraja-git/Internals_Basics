@@ -71,3 +71,18 @@ with open("../results/step1_s1.json", "w") as f:
     json.dump(output, f, indent=4)
 
 print("Task 1 completed")
+
+
+# ---------------- TASK 2 ----------------
+# Save best model separately
+
+import joblib
+
+os.makedirs("../models", exist_ok=True)
+
+if best_model_name == "LinearRegression":
+    joblib.dump(models["LinearRegression"], "../models/best_model.pkl")
+else:
+    joblib.dump(models["GradientBoosting"], "../models/best_model.pkl")
+
+print("Best model saved successfully")
