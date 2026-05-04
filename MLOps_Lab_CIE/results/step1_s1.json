@@ -1,0 +1,18 @@
+{
+    "experiment_name": "reviewbot-bug-detection-count",
+    "models": [
+        {
+            "name": "LinearRegression",
+            "mae": 0.6479720005036818,
+            "rmse": 0.8320292129535987
+        },
+        {
+            "name": "GradientBoosting",
+            "mae": 4.789448791973694,
+            "rmse": 5.798992742463207
+        }
+    ],
+    "best_model": "LinearRegression",
+    "best_metric_name": "mae",
+    "best_metric_value": 0.6479720005036818
+}
