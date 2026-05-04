@@ -1,0 +1,7 @@
+{
+  "registered_model_name": "reviewbot-bug-detection-count-predictor",
+  "version": 1,
+  "run_id": "8a0c3ab5f32c4570948e34f8...",
+  "source_metric": "mae",
+  "source_metric_value": 4.789448791973694
+}
